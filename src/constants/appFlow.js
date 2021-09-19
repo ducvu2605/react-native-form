@@ -1,0 +1,4 @@
+export const AppFlowActions = {
+  CHANGE_ROLE: 'CHANGE_ROLE',
+  NOTIFY_NETWORK_ERROR: 'NOTIFY_NETWORK_ERROR',
+};
