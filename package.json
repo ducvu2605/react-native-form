@@ -36,6 +36,7 @@
     "react-native-swiper": "^1.6.0",
     "react-native-themed-styles": "0.0.4",
     "react-redux": "^7.2.4",
+    "recoil": "^0.4.1",
     "redux": "^4.1.1",
     "redux-saga": "^1.1.3"
   },
