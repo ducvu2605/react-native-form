@@ -5,6 +5,7 @@ import AppNavigation from './src/views/navigations';
 import {Provider} from 'react-redux';
 
 import {store} from './src/redux/store';
+import {RecoilRoot} from 'recoil';
 
 const App = () => {
   useEffect(() => {
@@ -12,7 +13,9 @@ const App = () => {
   }, []);
   return (
     <Provider store={store}>
-      <AppNavigation />
+      <RecoilRoot>
+        <AppNavigation />
+      </RecoilRoot>
     </Provider>
   );
 };

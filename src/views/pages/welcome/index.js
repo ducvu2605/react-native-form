@@ -12,6 +12,8 @@ import jpgs from '../../../assets/images/jpg';
 import {screenWidth, screenHeight} from '../../../utils';
 // native android
 import ToastModule from '../../../native/android/toastModule';
+import {useRecoilState} from 'recoil';
+import textState from '../../../recoil/atoms/textState';
 
 const heightImage = screenHeight - 244 + 32;
 const Welcome = props => {
@@ -27,6 +29,13 @@ const Welcome = props => {
     });
     return reverseImageAnimated;
   }, [navigation]);
+
+  // recoil
+  const [textRecoil, setTextRecoil] = useRecoilState(textState);
+
+  useEffect(() => {
+    console.log(textRecoil);
+  }, []);
 
   const onPressSignUp = () => {
     imageTranstion.start();
