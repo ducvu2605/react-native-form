@@ -13,7 +13,7 @@ import {screenWidth, screenHeight} from '../../../utils';
 // native android
 import ToastModule from '../../../native/android/toastModule';
 import {useRecoilState} from 'recoil';
-import textState from '../../../recoil/atoms/textState';
+import textSelector from '../../../recoil/selector/textSelector';
 
 const heightImage = screenHeight - 244 + 32;
 const Welcome = props => {
@@ -31,7 +31,7 @@ const Welcome = props => {
   }, [navigation]);
 
   // recoil
-  const [textRecoil, setTextRecoil] = useRecoilState(textState);
+  const [textRecoil, setTextRecoil] = useRecoilState(textSelector);
 
   useEffect(() => {
     console.log(textRecoil);

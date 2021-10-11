@@ -4,3 +4,4 @@ const textState = atom({
   key: 'TEXT-STATE',
   default: 'DucVu',
 });
+export default textState;
